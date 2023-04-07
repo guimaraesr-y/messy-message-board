@@ -1,0 +1,11 @@
+main {
+    margin: auto;
+    margin: 50px auto;
+    border-radius: 20px 0 20px 0;
+}
+
+.start-button {
+    font-size: 1.75em;
+    width: 50%;
+    margin-bottom: 4%;
+}

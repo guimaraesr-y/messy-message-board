@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MessBoard</title>
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="/js/dashboard.js"></script>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img src="/imgs/logo-small.png" alt="" width="200px">
+        </a>
+        <div>
+            <button onclick="window.location.href='/user/logout'" class="button-01">Sair</button>
+        </div>
+    </header>
+    <hr>
+    <main class="container">
+        <div class="left-bar">
+            <a><h3>Profile</h3></a>
+            <!-- <a><h3>New</h3></a>
+            <a><h3>Most Liked</h3></a>
+            <a><h3>Highlights</h3></a> -->
+        </div>
+        <hr>
+        <div class="main-bar">
+            <h2 class="hi-title">Hi! :3</h2><hr><br>
+            <form class="send-message--form" action="/message/send" method="post">
+                <!-- <input type="text" name="message" placeholder="Today I'm feeling..."> -->
+                <textarea name="message" rows="3" maxlength="255"></textarea>
+                <button type="submit"><img src="/imgs/icons/send.svg"></button>
+            </form>
+            <br><br>
+            <div class="messages-board">
+
+                <!-- Implementar isso com javascript para buscar no banco -->
+                <div class="post--div">
+                    <div class="texts">
+                        <small class="author-text">Administrator - admin</small>
+                        <p class="message-text">this message service is incredible!</p>
+                        
+                        <div class="inherited-message--div container">
+                            <small class="author-text">Administrador - admin</small>
+                            <p class="message-text">first message of the board!</p>
+                        </div><br>
+
+                        <small class="datetime-text">05/04/2023 - 09:45</small><br>
+                    </div>
+                    <div class="reactions">
+                        <div class="reaction--div">
+                            <small>2,5k+</small>
+                            <img src="/imgs/icons/arrow-top.svg" style="color: #537894">
+                        </div>
+                        <div class="reaction--div">
+                            <img src="/imgs/icons/arrow-bottom.svg" style="color: #537894">
+                            <small>12</small>
+                        </div><br>
+                        <a><img src="/imgs/icons/trash.svg"></a>
+                    </div>
+                </div>
+
+                <!-- Implementar isso com javascript para buscar no banco -->
+                <div class="post--div">
+                    <div class="texts">
+                        <small class="author-text">Administrtor - admin</small>
+                        <p class="message-text">first message of the board!</p>
+                        <small class="datetime-text">05/04/2023 - 09:45</small><br>
+                    </div>
+                    <div class="reactions">
+                        <div class="reaction--div">
+                            <small class="reaction-up--text">5k+</small>
+                            <img src="/imgs/icons/arrow-top.svg">
+                        </div>
+                        <div class="reaction--div">
+                            <img src="/imgs/icons/arrow-bottom.svg">
+                            <small class="react-down--text">244</small>
+                        </div><br>
+                        <a><img src="/imgs/icons/trash.svg"></a>
+                        <img src="/imgs/icons/comment.svg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>

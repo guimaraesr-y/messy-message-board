@@ -1,0 +1,76 @@
+main {
+    margin: 2% auto;
+    display: flex;
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 4px gray);
+}
+
+.left-bar {
+    width: 20%;
+}
+
+.main-bar {
+    padding: 0 2%;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+.send-message--form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+.send-message--form textarea {
+    width: 60%;
+    font-size: 1.4em;
+}
+
+.send-message--form button {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.send-message--form button > img {
+    filter: invert();
+}
+
+.messages-board {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.post--div {
+    border: 1px solid #537894;
+    border-radius: 10px;
+    padding: 3%;
+    width: 75%;
+    display: flex;
+    margin: auto;
+}
+
+.texts {
+    width: 100%;
+}
+
+.reactions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reaction--div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inherited-message--div {
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #537894;
+    border-radius: 5px;
+    cursor: pointer;
+}

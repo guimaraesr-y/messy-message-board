@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&family=Rock+Salt&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(200, 200, 200);
+}
+
+body div, body main {
+    background-color: white;
+}
+
+hr {
+    margin: 0;
+    border-color: #799FBD;
+}
+
+h1 {
+    /* font-family: 'Delicious Handrawn', cursive; */
+    font-family: 'Rock Salt', cursive;
+}
+
+* {
+    font-family: 'Rajdhani', cursive;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+a {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: white;
+}
+
+header div {
+    display: flex;
+    gap: 20%
+}
+
+header button {
+    width: 150px;
+}
+
+button {
+    border: 1px solid #799FBD;
+    background-color: #537894;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.container {
+    width: 75%;
+    padding: 1% 5%;
+}

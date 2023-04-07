@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>MessBoard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="css/globals.css" rel="stylesheet">
+        <link href="css/login.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="/">
+                <img src="/imgs/logo-small.png" alt="" width="200px">
+            </a>
+            <div>
+                <button onclick="window.location.href='/register'" class="button-01">Register</button>
+            </div>
+        </header>
+        <hr>
+
+        <main>
+            <h2>Login</h2>
+            <form action="/user/login" method="post">
+                <label>Username</label>
+                <input type="text" name="user"><br>
+                
+                <label>Password</label>
+                <input type="password" name="password">
+                <small>Show Password</small>
+                <br><br>
+                <button type="submit">Register</button>
+            </form>         
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

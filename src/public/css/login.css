@@ -1,0 +1,44 @@
+main {
+    width: 50%;
+    padding: 2% 5%;
+    margin: auto;
+    margin: 50px auto;
+    border-radius: 20px 0 20px 0;
+}
+
+fieldset {
+    display: block;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+legend {
+    font-size: larger;
+    padding: 0 25px;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-size: large;
+}
+
+form small {
+    cursor: pointer;
+}
+
+form small:hover {
+    color: #799FBD;
+}
+
+input {
+    font-size: 1em;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+form > button {
+    width: 30%;
+}
