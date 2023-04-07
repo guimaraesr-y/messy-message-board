@@ -1,7 +1,7 @@
 import { Request, Response} from "express";
 
 import User from "../model/User";
-import UserError from "../error/UserError";
+import UserError from "../../error/UserError";
 import { generateToken } from "../../jwt";
 import { compareHash, hashData } from "../../crypt";
 import { ILogin, IRegister } from "../../interfaces/IAuth";
